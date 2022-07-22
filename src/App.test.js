@@ -4,7 +4,7 @@ import App from './App';
 describe('<App />', () => {
   it('ConterView, CountButtons가 렌더 될 때', () => {
     render(<App />);
-    const view = screen.getByText('현재 숫자: 0'); //해당 스크린에 현재 숫자: 0이 있는지 확인
+    const view = screen.getByText('현재 숫자: 0');
     const buttons = screen.getAllByRole('button');
 
     expect(view).toBeInTheDocument();
